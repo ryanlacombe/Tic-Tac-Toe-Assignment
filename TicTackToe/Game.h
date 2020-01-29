@@ -9,6 +9,8 @@ public:
 
 	void draw();
 	void playerOneInput();
+	void playerTwoInput();
+	void winCheck();
 	void update();
 
 private:
