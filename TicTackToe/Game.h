@@ -8,6 +8,8 @@ public:
 	~Game();
 
 	void draw();
+	void playerOneInput();
+	void update();
 
 private:
 	char grid[3][3] = {
@@ -17,5 +19,8 @@ private:
 	};
 	int mapHeight = 3;
 	int mapWidth = 3;
+	bool gameEnd = false;
+	bool playerOneTurn = true;
+	bool playerTwoTurn = false;
 };
 

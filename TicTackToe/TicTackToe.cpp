@@ -8,6 +8,6 @@ int main()
 {
 	Game game;
 
-	game.draw();
+	game.update();
 }
 

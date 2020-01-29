@@ -26,3 +26,24 @@ void Game::draw()
 		std::cout << std::endl;
 	}
 }
+
+void Game::playerOneInput()
+{
+	char input;
+
+	std::cout << YELLOW << "Player 1 choose a space: " << RESET_COLOR;
+	std::cin >> input;
+
+}
+
+void Game::update()
+{
+	while (!gameEnd)
+	{
+		draw();
+		if (playerOneTurn)
+		{
+			playerOneInput();
+		}
+	}
+}
